@@ -1,4 +1,4 @@
-package day3.assignment;
+package assignment;
 
 import java.time.LocalDate;
 
