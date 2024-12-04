@@ -61,26 +61,15 @@ class Person implements Serializable {
         String regex
                 = "^[2-9]{1}[0-9]{3}\\s[0-9]{4}\\s[0-9]{4}$";
 
-
-        // Compile the ReGex
         Pattern p = Pattern.compile(regex);
 
 
-        // If the string is empty
-        // return false
         if (str == null) {
             return false;
         }
 
-
-        // Pattern class contains matcher() method
-        // to find matching between given string
-        // and regular expression.
         Matcher m = p.matcher(str);
 
-
-        // Return if the string
-        // matched the ReGex
         return m.matches();
     }
 
